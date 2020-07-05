@@ -1,0 +1,36 @@
+div#choose_div{
+	width:90%;
+	margin:0 auto;
+	margin-top:2rem;
+	height:3rem;
+	border-bottom: 1px solid rgba(0,0,0,.2);
+}
+#signIn_ul{
+	width:50%;
+	height:inherit;
+}
+#signIn_ul>li{
+	width:25%;
+	height:inherit;
+	font-size: 1.4rem;
+	float: left;
+	text-align: center;
+	cursor:default;
+	border-right:1px solid rgba(0,0,0,.5);
+}
+#signIn_ul>li:last-child{
+	border-right:none;
+}
+li.color_change{
+	border-bottom:3px solid rgba(255,0,0,.5) ;
+}
+a.color_change{
+	color:red;
+}
+#form{
+	margin-top:2rem;
+}
+#form .form-group{
+	width:90%;
+	margin:0 auto;
+}

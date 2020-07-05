@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- constant的配置：包含name和value属性 -->
+	<constant name="struts.devMode" value="true"></constant>
+	<!-- WEB编码 -->
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+	<constant name="struts.action.extension" value="action" />
+	<!-- 默认视图主题-->
+	<constant name="struts.ui.theme" value="simple"></constant>
+	<!-- 指定国际化资源文件 -->
+	<constant name="struts.custom.i18n.resources" value="config.resource.messages"></constant>
+	<!-- 设置默认的locale和字符编码 -->
+	<constant name="struts.locale" value="zh_CN"></constant>
+	
+	
+	
+	<!-- 配置文件位置预留 -->
+	
+	<include file="struts-root.xml"></include>
+	<include file="struts-project.xml"></include>
+	<include file="struts-order.xml"/>
+	<include file="struts-xq.xml"/>
+</struts>

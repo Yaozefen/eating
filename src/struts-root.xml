@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="root" namespace="/" extends = "struts-default">
+		<global-results>
+    		<result name="error">error.jsp</result>
+			<result name="index">index.jsp</result>
+			<result name="test">test.jsp</result>
+		</global-results><!--全局结果 -->
+		
+		<!-- 登录注册修改密码操作 -->
+		<action name="login" class = "cn.act.LoginAndRegister" method="login">
+			<result name="query">dish.jsp</result>
+			<result name="orderMap">orderCenter.jsp</result>
+			<result name="index">index.jsp</result>
+		</action>
+		<action name="register" class = "cn.act.LoginAndRegister" method="register">
+			<result name="index">index.jsp</result>
+			<result name="register">register.jsp</result>
+		</action>
+		<action name="updatePw" class = "cn.act.UserAction" method="updatePw">
+			<result name = "changePw">changePw.jsp</result>
+			<result name = "index">index.jsp</result>
+		</action>
+		<action name="noLogin" class = "cn.act.LoginAndRegister" method="signOut">
+			<result name="orderCenter">orderCenter.jsp</result>
+			<result name="index">index.jsp</result>
+		</action>
+		<!-- 订单中心操作 -->
+		<action name="AllOrder" class = "cn.act.OrderAction" method = "orderQueryAll">
+			<result name = "orderMap">orderCenter.jsp</result>
+		</action>
+		<action name="partOrder" class = "cn.act.OrderAction" method = "queryCompleted">
+			<result name = "orderMap">orderCenter.jsp</result>
+		</action>
+		<action name = "oSearch" class = "cn.act.OrderAction" method = "queryByOrder">
+    		<result name = "orderMap">orderCenter.jsp</result>
+    	</action>
+		<!-- 增删改查操作 -->
+		<action name="findNum" class = "cn.act.EmployeeAction" method = "autoFind">
+			<result name = "addStaff">addStaff.jsp</result>
+		</action>
+		<action name="addStaff" class = "cn.act.EmployeeAction" method = "addInfo">
+			<param name="savePath">/img/employeeImg</param>
+			<result name = "addStaff">addStaff.jsp</result>
+		</action>
+		<action name="addDish" class = "cn.act.DishAction" method = "addFood">
+			<param name="savePath">/img</param>
+			<result name = "upper">upperShelf.jsp</result>
+		</action>
+		<action name = "dSearch" class = "cn.ajax.CheckUser" method = "queryByDish">
+    		<result name = "success">lowerShelf.jsp</result>
+    	</action>
+    	<action name = "eSearch" class = "cn.ajax.CheckUser" method = "queryByUsername">
+    		<result name = "success">quit.jsp</result>
+    	</action>
+    	<action name = "deleteDish" class = "cn.act.DishAction" method = "deleteDish">
+    		<result name = "success">lowerShelf.jsp</result>
+    	</action>
+    	<action name = "deleteEmployee" class = "cn.act.EmployeeAction" method = "deleteEmployee">
+    		<result name = "success">quit.jsp</result>
+    	</action>
+    	<action name = "deleteOrder" class = "cn.act.OrderAction" method = "deleteOrder">
+    		<result name = "success">orderCenter.jsp</result>
+    	</action>
+    	<action name="queryEmp" class = "cn.act.EmployeeAction" method = "Allemp">
+			<result name = "employeeList">staffInfo.jsp</result>
+		</action>
+		<action name="queryTurn" class = "cn.act.TurnAction" method = "turnQueryCurrent">
+			<result name = "turnList">turnover.jsp</result>
+		</action>
+	</package>
+	
+	<!-- ajax和json -->
+	<package name="json" namespace="/json" extends="json-default">
+    	<action name = "rAjax" class = "cn.ajax.CheckUser" method = "registerAjax">
+    		<result name = "success" type="json" />
+    	</action>
+    	<action name = "lAjax" class = "cn.ajax.CheckUser" method = "loginAjax">
+    		<result name = "success" type="json" />
+    	</action>
+    	<action name = "dAjax" class = "cn.ajax.CheckUser" method = "queryByDish">
+    		<result name = "success" type="json" />
+    	</action>
+    	<action name = "eAjax" class = "cn.ajax.CheckUser" method = "queryByUsername">
+    		<result name = "success" type="json" />
+    	</action>
+    	<action name = "oAjax" class = "cn.ajax.CheckUser" method = "queryByOrder">
+    		<result name = "success" type="json" />
+    	</action>
+    </package>
+</struts>

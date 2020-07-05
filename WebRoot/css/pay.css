@@ -1,0 +1,39 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background: url(../img/u=1603691178,3946620443&fm=26&gp=0.jpg) no-repeat;
+	width:100%;
+	height:700px;
+
+}
+section.payContainer{
+	width:50%;
+	height:600px;
+	margin:0 auto;
+	line-height: 2.5rem;
+}
+div.payDiv{
+	width:25%;
+	height:auto;
+	margin:0 auto;
+}
+input[type=button]{
+	width:12rem;
+	height:2rem;
+	line-height: 1rem;
+	border-radius: .5rem;
+	box-shadow: 2px 2px 2px #828282;
+	margin-top: 1rem;
+}
+.wechatpay{
+	background:hsla(105,100%,50%,.7);
+}
+.alipay{
+	background:hsla(220,100%,50%,.7);
+}
+span#time{
+	color:red;
+	font-weight: bold;
+}

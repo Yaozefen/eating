@@ -1,0 +1,14 @@
+.sign_p>a{
+	float:none;
+}
+ul.pass_ul{
+	margin-top:1rem;
+}
+li.pass_degree{
+	width:4rem;
+	height:1rem;
+	background-color: gainsboro;
+	float:left;
+	margin-left:.2rem;
+	text-align: center;
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    
+<package name="address" extends="struts-default" namespace="/">
+	<action name="addaddr" class="com.action.Allaction" method="addaddr">
+	    <result name="success">addrbook.jsp</result>
+	    <result name="error">error.jsp</result>
+	</action>
+	<action name="search" class="com.action.Allaction" method="search">
+	    <result name="success">showaddr.jsp</result>
+	    <result name="error">error.jsp</result>
+	</action>
+	<action name="update" class="com.action.Allaction" method="update">
+	    <result name="success">addrbook.jsp</result>
+	    <result name="error">error.jsp</result>
+	</action>
+	<action name="login1" class="com.action.Allaction" method="login">
+	    <result name="success">ress.jsp</result>
+	</action>
+	
+	<action name="book" class="com.action.Allaction" method="search">
+	    <result name="success">addrbook.jsp</result>
+	    <result name="error">error.jsp</result>
+	</action>
+	
+	
+	<action name="delete" class="com.action.Allaction" method="delete">
+	    <result name="success">addrbook.jsp</result>
+	    <result name="error">error.jsp</result>
+	</action>
+	
+	<action name="likesearch" class="com.action.Allaction" method="likesearch">
+	    <result name="success">addrbook.jsp</result>
+	    <result name="error">error.jsp</result>
+	</action>
+	
+	<action name="modify" class="com.action.Allaction" method="modify">
+	    <result name="success">Modify.jsp</result>
+	    <result name="error">error.jsp</result>
+	</action>
+	</package>
+	<package name="forum" extends="struts-default" namespace="/">
+		<action name="fsearch" class="com.action.ForumAction" method="fsearch">
+		    <result name="success">alldialog.jsp</result>
+		    <result name="error">error.jsp</result>
+		</action>
+		<action name="fshow" class="com.action.ForumAction" method="fshow">
+		    <result name="success">show.jsp</result>
+		    <result name="error">error.jsp</result>
+		</action>
+	</package>
+</struts>

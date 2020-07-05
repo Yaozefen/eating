@@ -1,0 +1,217 @@
+#container{
+	width: 70%;
+	height: 600px;
+	background-color: white;
+	border-color: grey;
+	border:solid;
+	
+	float: center;
+}
+#container .form .head{
+	width: 100%;
+	height: 30px;
+	/*background-color: lightskyblue;*/
+}
+#container .form .head .pmsg{
+	width: 11%;
+	font-size: 20px;
+	font-family: "寰蒋闆呴粦";
+	margin-left: 10%;
+	margin-top: 1.5%;
+}
+#container .form .head .mark{
+	font-family: "寰蒋闆呴粦";
+	font-size: 15px;
+	color: darkgrey;
+	position: absolute;
+	top: 3.5%;
+	left: 15%;
+
+}
+#container .form .head .adrbook{
+	
+	text-decoration: none;
+	font-size: 18px;
+	font-family: "寰蒋闆呴粦";
+	color: black;
+	
+}
+#container .form .head .adrbook .pdrs{
+	width: 20%;
+	position: absolute;
+	left: 55%;
+	bottom: 90%;
+}
+#container .form .head .adrbook .addimg{
+	position: absolute;
+	left: 53%;
+	bottom: 90%;
+
+}
+#container #center{
+	width: 100%;
+	height: 400px;
+/*	background-color: orchid;*/
+	margin: 0;
+	
+}
+#container #center #group1{
+	width: 100%;
+	height: 80px;
+/*	background-color: palegreen;*/
+	margin-top: 2%;
+	
+}
+#container #center #group1 #mark{
+	
+	padding-left: 6.5%;
+	position: absolute;
+	top: 14%;
+	
+
+}
+.l-nameinput{
+	width: 45%;
+	height: 80px;
+	/*background-color: blueviolet;*/
+}
+#container #center #group1 .xin{
+	width: 2%;
+	color: red;
+}
+#container #center #group1 .l-nameinput #inputname{
+	font-size: 15px;
+	position: absolute;
+	left: 7%;
+	top:20%;
+}
+/*绗竴缁勫彸杈�*/
+#container #center #R-absolutephone{
+	width: 30%;
+	height: 80px;
+	/*background-color: green;*/
+	float: right;
+	position: absolute;
+	left: 40%;
+	bottom: 73%;
+	
+}
+#container #center #group1 #absolutephone{
+	font-size: 15px;
+	position: absolute;
+	left: 7%;
+	bottom: 35%;
+}
+#container #center #group1 #R-absolutephone .phone1{
+	padding-left: 8%;
+	position: absolute;
+	bottom: 90%;
+}
+/*绗簩缁�*/
+/*宸﹁竟*/
+#container #center #group2{
+	width: 100%;
+	height: 80px;
+	/*background-color: palegreen;*/
+	margin-top: 2%;
+	
+}
+#container #center #group2 #mark2{
+	
+	padding-left: 6%;
+	position: absolute;
+	
+	top: 30%;
+		
+
+}
+.L2{
+	width: 45%;
+	height: 80px;
+	/*background-color: blueviolet;*/
+}
+#container #center #group2 .xin2{
+	width: 2%;
+	color: red;
+}
+#container #center #group2 .L2 #address{
+	font-size: 15px;
+	position: absolute;
+	left: 7%;
+	top:35%;
+}
+/*绗簩缁勫彸杈�*/
+#R2{
+	width: 30%;
+	height: 80px;
+	/*background-color: green;*/
+	float: right;
+	position: absolute;
+	left: 40%;
+	bottom: 57%;
+}
+#container #center #group2 #mark{
+	
+	padding-left: 7%;
+	
+
+}
+#container #center #group2 .xin3{
+	width: 2%;
+	color: red;
+}
+#container #center #group2 #R2 #cellphone{
+	font-size: 15px;
+	position: absolute;
+	left: 7%;
+	top:40%;
+}
+#container #center #group3{
+	width: 100%;
+	height: 80px;
+	/*background-color: palegreen;*/
+	margin-top: 2%;
+	
+}
+#container #center #group3 #mark4{
+	
+	padding-left: 9%;
+	
+
+}
+#container #center #group3 #J_Address{
+	font-size: 15px;
+	position: absolute;
+	left: 7%;
+	top:48%;
+}
+#container #center #group3 .xin4{
+	width: 2%;
+	color: red;
+}
+.addr-img{
+	position: absolute;
+	left: 61%;
+	top: 48%;
+}
+/*绗洓缁�*/
+#container #center #group4{
+	width: 100%;
+	height: 80px;
+	/*background-color: palegreen;*/
+	margin-top: 2%;
+	
+}
+.submit{
+	color: white;
+	font-size: 15px;
+	background-color: red;
+	padding:2px 25px;
+	border-radius: 24px;
+	margin-left: 75%;
+}
+input{
+	height: 28px;
+}
+
+

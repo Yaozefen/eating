@@ -1,0 +1,57 @@
+.page{
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: none;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    position: fixed;
+    z-index: 1010;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto;
+    background: rgba(0,0,0,.6);
+    display: none;
+}
+.content{
+    opacity:1;
+    padding: 20px;
+    color: #666;
+    margin: 200px auto;
+    background-color: #FFFFFF;
+    width: 420px;
+    height: 400px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.up-header{
+    font-size:16px;
+    font-weight: 700;
+    float: left;
+    margin-top:-19px;
+}
+.esc{
+    float: right;
+}
+.form{
+    text-align:right;
+    margin: 70px auto;
+}
+.form input{
+    height:28px;
+    width: 200px;
+    border-radius:3px ;
+    border: 1px solid #CCCCCC;
+}
+.form table tr{
+    margin-bottom: 20px;
+}
+.form .submit{
+    margin: 30px 82px;
+    background: #1e89e0;
+    color: #FFFFFF;
+    cursor: pointer;
+}
